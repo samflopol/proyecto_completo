@@ -7,7 +7,7 @@
                     <h3 class="text-uppercase">crear nueva persona</h3>
                 </div>
                 <div class="card-body">
-                    <form action="/add" method="post">
+                    <form action="/add" method="post" enctype="multipart/form-data">
                         <div class="input-group mt-2">
                             <label for="name" class="input-group-text">nombre persona</label>
                             <input class="form--control" type="text" name="name" id="name" placeholder="Ej:samuel o"autofocus required>
@@ -19,8 +19,16 @@
                         </div>
 
                         <div class="input-group mt-2">
-                            <label for="name" class="input-group-text">nombre persona</label>
+                            <label for="name" class="input-group-text">edad </label>
                             <input class="form--control" type="numbert" name="age" id="age" placeholder="Ej:20"autofocus required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="observacion" class="input-group-text"> observacion </label>
+                            <input class="form-control" type="text" name="observacion" id="observacion" placeholder="Ejemplo: es una buena persona" autofocus required >
+                        </div>
+                        <div class="input-group mt-2">
+                            <input class="form-control" type="file" name="file" id="file">
                         </div>
 
                         <div class="form-group mt-4 d-grid gap-2">
